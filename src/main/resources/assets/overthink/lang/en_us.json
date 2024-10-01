@@ -1,0 +1,12 @@
+{
+  "item.overthink.diamond_upgrade_smithing_template": "Smithing Template",
+  "item.overthink.leather_cover": "Leather Cover",
+  "item.overthink.strong_tool_handle": "Refined Tool Handle",
+  "item.overthink.diamond_upgrade_smithing_template.upgradeText": "Diamond Upgrade",
+  "item.overthink.smithing_template.diamond_upgrade.applies_to": "Iron Equipment",
+  "item.overthink.smithing_template.diamond_upgrade.ingredients": "Diamond",
+  "item.overthink.smithing_template.diamond_upgrade.base_slot_description": "Add iron armor, weapon, or tool",
+  "item.overthink.smithing_template.diamond_upgrade.additions_slot_description": "Add Diamond",
+
+  "itemGroup.overthink": "OverThink"
+}
