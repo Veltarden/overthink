@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import veltarden.overthink.item.ModItemGroups;
 import veltarden.overthink.item.ModItems;
+import veltarden.overthink.util.ModLootTableModifiers;
 
 public class Overthink implements ModInitializer {
 	public static final String MOD_ID = "overthink";
@@ -16,6 +17,7 @@ public class Overthink implements ModInitializer {
 		//ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
 		ModItemGroups.registerModItemGroups();
+		ModLootTableModifiers.modifyLootTables();
 
 		LOGGER.info("Metiendo webadas de overthink!1!");
 
