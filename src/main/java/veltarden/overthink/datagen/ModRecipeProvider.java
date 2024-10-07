@@ -118,7 +118,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         //tools
         //recomendacion: hacer los stronger sticks/ tool handle
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, Items.IRON_AXE, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.IRON_AXE, 1)
                 .pattern("AA ")
                 .pattern("AB ")
                 .pattern(" B ")
@@ -128,7 +128,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.STRONG_TOOL_HANDLE), conditionsFromItem(ModItems.STRONG_TOOL_HANDLE))
                 .offerTo(exporter, new Identifier(getRecipeName(Items.IRON_AXE)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, Items.IRON_PICKAXE, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.IRON_PICKAXE, 1)
                 .pattern("AAA")
                 .pattern(" B ")
                 .pattern(" B ")
@@ -148,7 +148,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.STRONG_TOOL_HANDLE), conditionsFromItem(ModItems.STRONG_TOOL_HANDLE))
                 .offerTo(exporter, new Identifier(getRecipeName(Items.IRON_SWORD)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, Items.IRON_SHOVEL, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.IRON_SHOVEL, 1)
                 .pattern(" A ")
                 .pattern(" B ")
                 .pattern(" B ") //???
@@ -158,7 +158,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.STRONG_TOOL_HANDLE), conditionsFromItem(ModItems.STRONG_TOOL_HANDLE))
                 .offerTo(exporter, new Identifier(getRecipeName(Items.IRON_SHOVEL)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, Items.IRON_HOE, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.IRON_HOE, 1)
                 .pattern("AA ")
                 .pattern(" B ")
                 .pattern(" B ")
@@ -169,9 +169,49 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(Items.IRON_HOE)));
 
 
+        //stone tools
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.STONE_PICKAXE, 1)
+                .pattern("ACA")
+                .pattern(" B ")
+                .pattern(" B ")
+                .input('A', Items.COBBLESTONE)
+                .input('B', Items.STICK)
+                .input('C', Items.FLINT)
+                .criterion(hasItem(Items.COBBLESTONE), conditionsFromItem(Items.COBBLESTONE))
+                .criterion(hasItem(Items.FLINT), conditionsFromItem(Items.FLINT))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.STONE_PICKAXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.STONE_AXE, 1)
+                .pattern("AC ")
+                .pattern("AB ")
+                .pattern(" B ")
+                .input('A', Items.COBBLESTONE)
+                .input('B', Items.STICK)
+                .input('C', Items.FLINT)
+                .criterion(hasItem(Items.COBBLESTONE), conditionsFromItem(Items.COBBLESTONE))
+                .criterion(hasItem(Items.FLINT), conditionsFromItem(Items.FLINT))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.STONE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, Items.STONE_SWORD, 1)
+                .pattern(" C ")
+                .pattern(" A ")
+                .pattern(" B ")
+                .input('A', Items.COBBLESTONE)
+                .input('B', Items.STICK)
+                .input('C', Items.FLINT)
+                .criterion(hasItem(Items.COBBLESTONE), conditionsFromItem(Items.COBBLESTONE))
+                .criterion(hasItem(Items.FLINT), conditionsFromItem(Items.FLINT))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.STONE_SWORD)));
+
+
+
         //Diamond removal
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, Items.DIAMOND_AXE, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.DIAMOND_AXE, 1)
                 .pattern("AA ")
                 .pattern("AB ")
                 .pattern(" B ")
@@ -180,7 +220,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.BARRIER), conditionsFromItem(Items.BARRIER))
                 .offerTo(exporter, new Identifier(getRecipeName(Items.DIAMOND_AXE)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, Items.DIAMOND_PICKAXE, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.DIAMOND_PICKAXE, 1)
                 .pattern("AAA")
                 .pattern(" B ")
                 .pattern(" B ")
@@ -189,7 +229,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.BARRIER), conditionsFromItem(Items.BARRIER))
                 .offerTo(exporter, new Identifier(getRecipeName(Items.DIAMOND_PICKAXE)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, Items.DIAMOND_SHOVEL, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.DIAMOND_SHOVEL, 1)
                 .pattern(" A ")
                 .pattern(" B ")
                 .pattern(" B ")
@@ -207,7 +247,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.BARRIER), conditionsFromItem(Items.BARRIER))
                 .offerTo(exporter, new Identifier(getRecipeName(Items.DIAMOND_SWORD)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, Items.DIAMOND_HOE, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.DIAMOND_HOE, 1)
                 .pattern("AA ")
                 .pattern(" B ")
                 .pattern(" B ")
