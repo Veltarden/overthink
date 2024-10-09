@@ -17,6 +17,7 @@ public class ModItemGroups {
                         entries.add(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE);
                         entries.add(ModItems.LEATHER_COVER);
                         entries.add(ModItems.STRONG_TOOL_HANDLE);
+                        entries.add(ModItems.PILLOW);
                     }).build());
     public static void registerModItemGroups () {
         Overthink.LOGGER.info("metiendo grupos de items para: " + Overthink.MOD_ID);

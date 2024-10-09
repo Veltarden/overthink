@@ -19,9 +19,12 @@ public class ModItems {
      //public static final Item BROKEN_DIAMOND_UPGRADE = registerItem("broken_diamond_upgrade", new Item(new FabricItemSettings()));
 
     public static final Item LEATHER_COVER = registerItem("leather_cover", new Item(new FabricItemSettings()));
-    public static final Item DIAMOND_UPGRADE_SMITHING_TEMPLATE = registerItem("diamond_upgrade_smithing_template", ModSmithingTemplateItem.createDiamondUpgrade());
-    public static final Item STRONG_TOOL_HANDLE = registerItem("strong_tool_handle", ModSmithingTemplateItem.createDiamondUpgrade());
+    public static final Item STRONG_TOOL_HANDLE = registerItem("strong_tool_handle", new Item(new FabricItemSettings()));
+    public static final Item PILLOW = registerItem("pillow", new Item(new FabricItemSettings()));
 
+    //ESTO DE ACA GENERA TEMPLATES, NO COPIAR Y PEGAR
+    public static final Item DIAMOND_UPGRADE_SMITHING_TEMPLATE = registerItem("diamond_upgrade_smithing_template", ModSmithingTemplateItem.createDiamondUpgrade());
+    //ESTO DE ACA GENERA TEMPLATES, NO COPIAR Y PEGAR
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(DIAMOND_UPGRADE_SMITHING_TEMPLATE);

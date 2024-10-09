@@ -49,6 +49,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.STRING), conditionsFromItem(Items.STRING))
                 .offerTo(exporter, new Identifier(Overthink.MOD_ID, getRecipeName(ModItems.LEATHER_COVER)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PILLOW, 1)
+                .pattern("AAA")
+                .pattern("BBB")
+                .pattern("AAA")
+                .input('A', Items.LEATHER)
+                .input('B', Items.FEATHER)
+                .criterion(hasItem(Items.LEATHER), conditionsFromItem(Items.LEATHER))
+                .criterion(hasItem(Items.FEATHER), conditionsFromItem(Items.FEATHER))
+                .offerTo(exporter, new Identifier(Overthink.MOD_ID, getRecipeName(ModItems.PILLOW)));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STRONG_TOOL_HANDLE, 1)
                 .pattern("  B")
                 .pattern(" A ")
@@ -58,6 +68,20 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .offerTo(exporter, new Identifier(Overthink.MOD_ID, getRecipeName(ModItems.STRONG_TOOL_HANDLE)));
+
+
+        //bed changes
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.WHITE_BED, 1)
+                .pattern("CAA")
+                .pattern("BBB")
+                .input('A', Items.WHITE_WOOL)
+                .input('B', Items.OAK_PLANKS)
+                .input('C', ModItems.PILLOW)
+                .criterion(hasItem(Items.WHITE_WOOL), conditionsFromItem(Items.WHITE_WOOL))
+                .criterion(hasItem(Items.OAK_PLANKS), conditionsFromItem(Items.OAK_PLANKS))
+                .criterion(hasItem(ModItems.PILLOW), conditionsFromItem(ModItems.PILLOW))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.WHITE_BED)));
 
 
         //changes to armor and gear
