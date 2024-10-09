@@ -1,4 +1,4 @@
-// 1.20.4	2024-10-07T20:32:11.7480261	Overthink/Recipes
+// 1.20.4	2024-10-09T20:22:35.04913	Overthink/Recipes
 9d39d0b3c560675301a989f398cf362605999e0d data\minecraft\recipes\iron_shovel.json
 129a7243cd6226f9b04e3031e01b5bdfe345aa3d data\minecraft\recipes\diamond_helmet_from_upgrade.json
 848f1387c3c5b899155cd90d949aed8b1b0b0b49 data\minecraft\advancements\recipes\combat\stone_sword.json
@@ -47,6 +47,7 @@ ff5b5a4c3a2879f4118e010c0a0eb2022c56dbb6 data\minecraft\recipes\iron_axe.json
 45e8e06d06b67d9bdc38a1a1332b1aa704d86ded data\minecraft\recipes\netherite_upgrade_smithing_template.json
 914a1bc2898e89e4c6f25324e5c8da173a25588e data\minecraft\advancements\recipes\misc\diamond_leggings_from_upgrade.json
 b19003737ce10bd3524f23c42866d9afd5cd341d data\minecraft\advancements\recipes\misc\diamond_axe_from_upgrade.json
+d0f829eacdd41c0aa42ce85d5e0d5188637fc53c data\minecraft\recipes\white_bed.json
 fc6248965f5a537000dae9aee410e734d8c9ed9b data\minecraft\advancements\recipes\tools\iron_axe.json
 596d676de3cb1e1af002f92232a3da2f29eca488 data\minecraft\advancements\recipes\combat\iron_sword.json
 190f874c7dcf8e931f222806d2e6c2637aefeb2f data\minecraft\recipes\stone_axe.json
@@ -60,6 +61,7 @@ fc6248965f5a537000dae9aee410e734d8c9ed9b data\minecraft\advancements\recipes\too
 85cea0e3697c9bf227f6582ad52a26ef5f6c2b4d data\minecraft\advancements\recipes\misc\diamond_boots_from_upgrade.json
 9ffd4dd8012733587f2644af661b490b09d237e0 data\minecraft\recipes\diamond_chestplate_from_upgrade.json
 3b9c4b3598d308a7b017617acfffcce34b9d0344 data\minecraft\advancements\recipes\misc\diamond_chestplate_from_upgrade.json
+506ad0011a7633b44815cd55a2c08aba5e8f9826 data\overthink\recipes\pillow.json
 4d24df48bf739686fcda31812119407a9f2b4b8e data\minecraft\advancements\recipes\combat\iron_boots.json
 028f9766bde5b16691a8c1f1aad0661d5fd441c5 data\minecraft\advancements\recipes\tools\stone_pickaxe.json
 5dd7eecf1618c4ad6ac1ce5ae18b01d583aaf25f data\minecraft\recipes\diamond_axe.json
@@ -68,4 +70,6 @@ fb4a80dce53e31024db5db0d301cad95f8d83425 data\minecraft\recipes\diamond_sword.js
 9ffdc60e5b2e73829f82e03909214384264e77cd data\minecraft\recipes\diamond_horse_armor_from_upgrade.json
 13bcb6c277eb57288e6779b4545f7fa3ef96fea6 data\minecraft\advancements\recipes\combat\iron_helmet.json
 dbfdbab9a23745565f24f85f00cedf6ba0e9c275 data\minecraft\recipes\diamond_leggings_from_upgrade.json
+fb199d7ea711e159034cb0fa7130be5f63e17b6f data\overthink\advancements\recipes\misc\pillow.json
+874f1403f65b7fd32b60e291f787199420f5abd3 data\minecraft\advancements\recipes\misc\white_bed.json
 f1593e398393d18a978fc07ad98b688ad1801736 data\minecraft\advancements\recipes\tools\diamond_shovel.json

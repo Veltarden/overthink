@@ -20,6 +20,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.LEATHER_COVER, Models.GENERATED);
         itemModelGenerator.register(ModItems.STRONG_TOOL_HANDLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PILLOW, Models.GENERATED);
     }
 
 }
