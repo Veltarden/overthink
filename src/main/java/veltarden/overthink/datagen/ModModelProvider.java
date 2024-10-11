@@ -21,6 +21,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.LEATHER_COVER, Models.GENERATED);
         itemModelGenerator.register(ModItems.STRONG_TOOL_HANDLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.PILLOW, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STONE_SHARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DEAD_LEATHER, Models.GENERATED);
     }
 
 }

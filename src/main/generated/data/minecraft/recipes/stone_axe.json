@@ -3,17 +3,18 @@
   "category": "equipment",
   "key": {
     "A": {
-      "item": "minecraft:iron_ingot"
+      "item": "overthink:stone_shard"
     },
     "B": {
-      "item": "overthink:leather_cover"
+      "item": "minecraft:stick"
     }
   },
   "pattern": [
-    "B B",
-    "A A"
+    "AA ",
+    "AB ",
+    " B "
   ],
   "result": {
-    "item": "minecraft:iron_boots"
+    "item": "minecraft:stone_axe"
   }
 }

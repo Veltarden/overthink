@@ -1,24 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dead_leather": {
+    "has_rotten_flesh": {
       "conditions": {
         "items": [
           {
             "items": [
-              "overthink:dead_leather"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_string": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:string"
+              "minecraft:rotten_flesh"
             ]
           }
         ]
@@ -27,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "overthink:leather_cover"
+        "recipe": "minecraft:dead_leather_from_smelting_rotten_flesh"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -35,13 +23,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_dead_leather",
-      "has_string"
+      "has_rotten_flesh"
     ]
   ],
   "rewards": {
     "recipes": [
-      "overthink:leather_cover"
+      "minecraft:dead_leather_from_smelting_rotten_flesh"
     ]
   }
 }

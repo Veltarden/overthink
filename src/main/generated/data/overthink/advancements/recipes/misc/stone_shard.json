@@ -1,24 +1,24 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dead_leather": {
+    "has_cobblestone": {
       "conditions": {
         "items": [
           {
             "items": [
-              "overthink:dead_leather"
+              "minecraft:cobblestone"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_string": {
+    "has_flint": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:string"
+              "minecraft:flint"
             ]
           }
         ]
@@ -27,7 +27,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "overthink:leather_cover"
+        "recipe": "overthink:stone_shard"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -35,13 +35,13 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_dead_leather",
-      "has_string"
+      "has_cobblestone",
+      "has_flint"
     ]
   ],
   "rewards": {
     "recipes": [
-      "overthink:leather_cover"
+      "overthink:stone_shard"
     ]
   }
 }

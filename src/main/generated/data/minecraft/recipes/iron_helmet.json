@@ -11,8 +11,7 @@
   },
   "pattern": [
     "AAA",
-    "ABA",
-    "   "
+    "ABA"
   ],
   "result": {
     "item": "minecraft:iron_helmet"

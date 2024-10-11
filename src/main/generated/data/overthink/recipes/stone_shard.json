@@ -3,18 +3,17 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "overthink:dead_leather"
+      "tag": "minecraft:stone_tool_materials"
     },
     "B": {
-      "item": "minecraft:string"
+      "item": "minecraft:flint"
     }
   },
   "pattern": [
-    " B ",
-    "BAB",
-    " B "
+    "BAB"
   ],
   "result": {
-    "item": "overthink:leather_cover"
+    "count": 2,
+    "item": "overthink:stone_shard"
   }
 }

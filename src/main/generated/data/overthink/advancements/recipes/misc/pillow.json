@@ -13,12 +13,12 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_string": {
+    "has_feather": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:string"
+              "minecraft:feather"
             ]
           }
         ]
@@ -27,7 +27,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "overthink:leather_cover"
+        "recipe": "overthink:pillow"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -36,12 +36,12 @@
     [
       "has_the_recipe",
       "has_dead_leather",
-      "has_string"
+      "has_feather"
     ]
   ],
   "rewards": {
     "recipes": [
-      "overthink:leather_cover"
+      "overthink:pillow"
     ]
   }
 }
