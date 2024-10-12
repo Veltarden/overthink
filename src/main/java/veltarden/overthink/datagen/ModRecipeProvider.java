@@ -5,16 +5,21 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.SmithingTransformRecipeJsonBuilder;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.util.Identifier;
 import veltarden.overthink.Overthink;
 import veltarden.overthink.item.ModItems;
 
+import java.util.List;
+
 public class ModRecipeProvider extends FabricRecipeProvider {
 
-    //public static List<ItemConvertible> SmeltableEjemplo = List.of(ModItems.NETHER_GEM);
+    public static List<ItemConvertible> rottenFleshSmeltable = List.of(Items.ROTTEN_FLESH);
+
 
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
@@ -22,7 +27,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter exporter) {
-        //offerSmelting(exporter, SmeltableEjemplo, RecipeCategory.MISC, ModItems.NETHER_GEM, 0.1f, 0.1f, "nethergem");
+
+        offerSmelting(exporter, rottenFleshSmeltable, RecipeCategory.MISC, ModItems.DEAD_LEATHER, 0.1f, 200, "nethergem");
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE, 2)
                 .pattern("DAD")
@@ -43,19 +49,28 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern(" B ")
                 .pattern("BAB")
                 .pattern(" B ")
-                .input('A', Items.LEATHER)
+                .input('A', ModItems.DEAD_LEATHER)
                 .input('B', Items.STRING)
-                .criterion(hasItem(Items.LEATHER), conditionsFromItem(Items.LEATHER))
+                .criterion(hasItem(ModItems.DEAD_LEATHER), conditionsFromItem(ModItems.DEAD_LEATHER))
                 .criterion(hasItem(Items.STRING), conditionsFromItem(Items.STRING))
                 .offerTo(exporter, new Identifier(Overthink.MOD_ID, getRecipeName(ModItems.LEATHER_COVER)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STONE_SHARD, 2)
+                .pattern("BAB")
+                .input('A', Ingredient.fromTag(ItemTags.STONE_TOOL_MATERIALS))
+                .input('B', Items.FLINT)
+                .criterion(hasItem(Items.COBBLESTONE), conditionsFromItem(Items.COBBLESTONE))
+                .criterion(hasItem(Items.FLINT), conditionsFromItem(Items.FLINT))
+                .offerTo(exporter, new Identifier(Overthink.MOD_ID, getRecipeName(ModItems.STONE_SHARD)));
+
+        //thanks to .luviana on symphony discord for this pillow recipe
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PILLOW, 1)
                 .pattern("AAA")
                 .pattern("BBB")
                 .pattern("AAA")
-                .input('A', Items.LEATHER)
-                .input('B', Items.FEATHER)
-                .criterion(hasItem(Items.LEATHER), conditionsFromItem(Items.LEATHER))
+                .input('A', ModItems.DEAD_LEATHER)
+                .input('B', Items.PHANTOM_MEMBRANE)
+                .criterion(hasItem(ModItems.DEAD_LEATHER), conditionsFromItem(ModItems.DEAD_LEATHER))
                 .criterion(hasItem(Items.FEATHER), conditionsFromItem(Items.FEATHER))
                 .offerTo(exporter, new Identifier(Overthink.MOD_ID, getRecipeName(ModItems.PILLOW)));
 
@@ -76,7 +91,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("CAA")
                 .pattern("BBB")
                 .input('A', Items.WHITE_WOOL)
-                .input('B', Items.OAK_PLANKS)
+                .input('B', Ingredient.fromTag(ItemTags.PLANKS))
                 .input('C', ModItems.PILLOW)
                 .criterion(hasItem(Items.WHITE_WOOL), conditionsFromItem(Items.WHITE_WOOL))
                 .criterion(hasItem(Items.OAK_PLANKS), conditionsFromItem(Items.OAK_PLANKS))
@@ -110,7 +125,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(Items.IRON_CHESTPLATE)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, Items.IRON_BOOTS, 1)
-                .pattern("   ")
                 .pattern("B B")
                 .pattern("A A")
                 .input('A', Items.IRON_INGOT)
@@ -132,7 +146,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, Items.IRON_HELMET, 1)
                 .pattern("AAA")
                 .pattern("ABA")
-                .pattern("   ")
                 .input('A', Items.IRON_INGOT)
                 .input('B', ModItems.LEATHER_COVER)
                 .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
@@ -193,45 +206,69 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(Items.IRON_HOE)));
 
 
-        //stone tools
+        //stone tools and arrow
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.STONE_PICKAXE, 1)
-                .pattern("ACA")
+                .pattern("AAA")
                 .pattern(" B ")
                 .pattern(" B ")
-                .input('A', Items.COBBLESTONE)
+                .input('A', ModItems.STONE_SHARD)
                 .input('B', Items.STICK)
-                .input('C', Items.FLINT)
-                .criterion(hasItem(Items.COBBLESTONE), conditionsFromItem(Items.COBBLESTONE))
-                .criterion(hasItem(Items.FLINT), conditionsFromItem(Items.FLINT))
+                .criterion(hasItem(ModItems.STONE_SHARD), conditionsFromItem(ModItems.STONE_SHARD))
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .offerTo(exporter, new Identifier(getRecipeName(Items.STONE_PICKAXE)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.STONE_AXE, 1)
-                .pattern("AC ")
+                .pattern("AA ")
                 .pattern("AB ")
                 .pattern(" B ")
-                .input('A', Items.COBBLESTONE)
+                .input('A', ModItems.STONE_SHARD)
                 .input('B', Items.STICK)
-                .input('C', Items.FLINT)
-                .criterion(hasItem(Items.COBBLESTONE), conditionsFromItem(Items.COBBLESTONE))
-                .criterion(hasItem(Items.FLINT), conditionsFromItem(Items.FLINT))
+                .criterion(hasItem(ModItems.STONE_SHARD), conditionsFromItem(ModItems.STONE_SHARD))
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .offerTo(exporter, new Identifier(getRecipeName(Items.STONE_AXE)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, Items.STONE_SWORD, 1)
-                .pattern(" C ")
+                .pattern(" A ")
                 .pattern(" A ")
                 .pattern(" B ")
-                .input('A', Items.COBBLESTONE)
+                .input('A', ModItems.STONE_SHARD)
                 .input('B', Items.STICK)
-                .input('C', Items.FLINT)
-                .criterion(hasItem(Items.COBBLESTONE), conditionsFromItem(Items.COBBLESTONE))
-                .criterion(hasItem(Items.FLINT), conditionsFromItem(Items.FLINT))
+                .criterion(hasItem(ModItems.STONE_SHARD), conditionsFromItem(ModItems.STONE_SHARD))
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .offerTo(exporter, new Identifier(getRecipeName(Items.STONE_SWORD)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.STONE_SHOVEL, 1)
+                .pattern(" A ")
+                .pattern(" B ")
+                .pattern(" B ")
+                .input('A', ModItems.STONE_SHARD)
+                .input('B', Items.STICK)
+                .criterion(hasItem(ModItems.STONE_SHARD), conditionsFromItem(ModItems.STONE_SHARD))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.STONE_SHOVEL)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.STONE_HOE, 1)
+                .pattern("AA ")
+                .pattern(" B ")
+                .pattern(" B ")
+                .input('A', ModItems.STONE_SHARD)
+                .input('B', Items.STICK)
+                .criterion(hasItem(ModItems.STONE_SHARD), conditionsFromItem(ModItems.STONE_SHARD))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.STONE_HOE)));
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, Items.ARROW, 4)
+                .pattern("  A")
+                .pattern(" B ")
+                .pattern("C  ")
+                .input('A', ModItems.STONE_SHARD)
+                .input('B', Items.STICK)
+                .input('C', Items.FEATHER)
+                .criterion(hasItem(ModItems.STONE_SHARD), conditionsFromItem(ModItems.STONE_SHARD))
+                .criterion(hasItem(Items.FEATHER), conditionsFromItem(Items.FEATHER))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.ARROW)));
 
         //Diamond removal
 

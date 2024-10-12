@@ -6,15 +6,15 @@
       "item": "overthink:dead_leather"
     },
     "B": {
-      "item": "minecraft:string"
+      "item": "minecraft:phantom_membrane"
     }
   },
   "pattern": [
-    " B ",
-    "BAB",
-    " B "
+    "AAA",
+    "BBB",
+    "AAA"
   ],
   "result": {
-    "item": "overthink:leather_cover"
+    "item": "overthink:pillow"
   }
 }

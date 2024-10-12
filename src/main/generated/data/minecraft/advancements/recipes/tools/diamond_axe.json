@@ -1,24 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dead_leather": {
+    "has_barrier": {
       "conditions": {
         "items": [
           {
             "items": [
-              "overthink:dead_leather"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_string": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:string"
+              "minecraft:barrier"
             ]
           }
         ]
@@ -27,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "overthink:leather_cover"
+        "recipe": "minecraft:diamond_axe"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -35,13 +23,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_dead_leather",
-      "has_string"
+      "has_barrier"
     ]
   ],
   "rewards": {
     "recipes": [
-      "overthink:leather_cover"
+      "minecraft:diamond_axe"
     ]
   }
 }

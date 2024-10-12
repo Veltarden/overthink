@@ -1,24 +1,24 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dead_leather": {
+    "has_stick": {
       "conditions": {
         "items": [
           {
             "items": [
-              "overthink:dead_leather"
+              "minecraft:stick"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_string": {
+    "has_stone_shard": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:string"
+              "overthink:stone_shard"
             ]
           }
         ]
@@ -27,7 +27,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "overthink:leather_cover"
+        "recipe": "minecraft:stone_hoe"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -35,13 +35,13 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_dead_leather",
-      "has_string"
+      "has_stone_shard",
+      "has_stick"
     ]
   ],
   "rewards": {
     "recipes": [
-      "overthink:leather_cover"
+      "minecraft:stone_hoe"
     ]
   }
 }
