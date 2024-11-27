@@ -383,7 +383,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "overthink:stone_shard"
+          "name": "overthink:netherite_upgrade_shard"
         }
       ],
       "rolls": 1.0
