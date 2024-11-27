@@ -47,7 +47,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("ABA")
                 .pattern("AAA")
                 .input('A', ModItems.NETHERITE_UPGRADE_SHARD)
-                .input('B', Items.IRON_INGOT)
+                .input('B', Items.NETHERITE_INGOT)
                 .criterion(hasItem(Items.NETHERITE_INGOT), conditionsFromItem(Items.NETHERITE_INGOT))
                 .criterion(hasItem(ModItems.NETHERITE_UPGRADE_SHARD), conditionsFromItem(ModItems.NETHERITE_UPGRADE_SHARD))
                 .offerTo(exporter, Identifier.of("netherite_upgrade_smithing_template_from_pieces"));

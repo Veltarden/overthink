@@ -1,4 +1,4 @@
-// 1.21.1	2024-11-26T21:42:00.7772087	Overthink/Recipes
+// 1.21.1	2024-11-27T02:30:49.1653478	Overthink/Recipes
 edc47fed9d9fb0dc33f9ba0d5f90651ce043acef data\minecraft\advancement\recipes\combat\diamond_helmet.json
 006d5d2b32410a961bb611705426436a11406564 data\minecraft\advancement\recipes\misc\diamond_pickaxe_from_upgrade.json
 6b8d3a50fc72553268065c856c817706df1fd66d data\minecraft\advancement\recipes\misc\diamond_axe_from_upgrade.json
@@ -52,9 +52,9 @@ c996fc13823d20bb67c595fec548d011b967b8cb data\minecraft\advancement\recipes\comb
 eeab71356a5002068164066758ae038b491d7bf1 data\minecraft\advancement\recipes\misc\blue_bed.json
 85437208c3ae89453f9f6619a136c097292494e5 data\minecraft\recipe\iron_helmet.json
 5c4e1dd274c95e7fa1b9f5ded18e5a6a26dab522 data\minecraft\advancement\recipes\misc\pink_bed.json
-95bf3eb0a0ed559a7d72c74aed0732b28a1911a0 data\minecraft\advancement\recipes\misc\purple_bed.json
 53a671edcf828678987b664a19e243933767c4ae data\minecraft\advancement\recipes\tools\iron_axe.json
 b66cae96559f0592b3a5348bcf3e6b5ebc4f0756 data\minecraft\recipe\iron_sword.json
+95bf3eb0a0ed559a7d72c74aed0732b28a1911a0 data\minecraft\advancement\recipes\misc\purple_bed.json
 a70fad51c78567773c94b11d98f13b54af42d396 data\minecraft\recipe\diamond_leggings_from_upgrade.json
 8c2453135b2d272fa93978be688b0be6d1220a58 data\minecraft\advancement\recipes\misc\diamond_boots_from_upgrade.json
 a6974b10b5bd8a1f341f73cc8d0fef5d353fcabc data\minecraft\advancement\recipes\misc\diamond_hoe_from_upgrade.json
@@ -109,7 +109,7 @@ a71f558edfb13dc700f17e1e8faacde847518cfd data\minecraft\recipe\red_bed.json
 a5d46c771ed2d571c53f49c99f2d649568259aad data\minecraft\advancement\recipes\misc\black_bed.json
 b220780f112ca6544c6f2e9f89eca1ee60efe403 data\minecraft\advancement\recipes\misc\dead_leather_from_smelting_rotten_flesh.json
 95dab907229e48a4142000db0e1a34277bed7e61 data\minecraft\recipe\white_bed.json
-1b5dfaf72bafcb4c492bcceb872be49c3f3b8b86 data\minecraft\recipe\netherite_upgrade_smithing_template_from_pieces.json
+442d894536676e28d4fde90590c403df4054945a data\minecraft\recipe\netherite_upgrade_smithing_template_from_pieces.json
 096a07351740c5ac95c12387a399abdef752f1d0 data\minecraft\recipe\magenta_bed.json
 2bb3f8a991333ebeeeb50dbee7b9c0a162445a7c data\minecraft\recipe\diamond_hoe_from_upgrade.json
 855bf44c6569416befa59d4fd26d80a784f4e9c9 data\minecraft\recipe\diamond_axe.json
