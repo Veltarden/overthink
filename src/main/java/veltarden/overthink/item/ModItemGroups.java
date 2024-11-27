@@ -11,7 +11,7 @@ import veltarden.overthink.Overthink;
 
 public class ModItemGroups {
 
-    public static final ItemGroup OVERTHINK_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(Overthink.MOD_ID, "nether_gem"),
+    public static final ItemGroup OVERTHINK_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(Overthink.MOD_ID, "nether_gem"),
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.overthink"))
                     .icon(() -> new ItemStack(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE)).entries((displayContext, entries) -> {
                         entries.add(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE);
@@ -20,6 +20,7 @@ public class ModItemGroups {
                         entries.add(ModItems.PILLOW);
                         entries.add(ModItems.STONE_SHARD);
                         entries.add(ModItems.DEAD_LEATHER);
+                        entries.add(ModItems.NETHERITE_UPGRADE_SHARD);
                     }).build());
     public static void registerModItemGroups () {
         Overthink.LOGGER.info("metiendo grupos de items para: " + Overthink.MOD_ID);

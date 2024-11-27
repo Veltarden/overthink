@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:honeycomb"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "  B",
+    " A ",
+    "B  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "overthink:strong_tool_handle"
+  }
+}

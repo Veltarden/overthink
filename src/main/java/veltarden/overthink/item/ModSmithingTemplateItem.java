@@ -63,22 +63,22 @@ public class ModSmithingTemplateItem extends SmithingTemplateItem {
         TITLE_FORMATTING = Formatting.GRAY;
         DESCRIPTION_FORMATTING = Formatting.BLUE;
 
-        EMPTY_SLOT_DIAMOND_TEXTURE = new Identifier("item/empty_slot_diamond");
+        EMPTY_SLOT_DIAMOND_TEXTURE = Identifier.of("item/empty_slot_diamond");
 
         DIAMOND_UPGRADE_TEXT = Text.translatable("item.overthink.diamond_upgrade_smithing_template.upgradeText").formatted(TITLE_FORMATTING);
         DIAMOND_UPGRADE_APPLIES_TO_TEXT  = Text.translatable("item.overthink.smithing_template.diamond_upgrade.applies_to").formatted(DESCRIPTION_FORMATTING);
         DIAMOND_UPGRADE_INGREDIENTS_TEXT =  Text.translatable("item.overthink.smithing_template.diamond_upgrade.ingredients").formatted(DESCRIPTION_FORMATTING);
         DIAMOND_UPGRADE_BASE_SLOT_DESCRIPTION_TEXT = Text.translatable("item.overthink.smithing_template.diamond_upgrade.base_slot_description");
         DIAMOND_UPGRADE_ADDITIONS_SLOT_DESCRIPTION_TEXT = Text.translatable("item.overthink.smithing_template.diamond_upgrade.additions_slot_description");
-        EMPTY_ARMOR_SLOT_HELMET_TEXTURE = new Identifier("item/empty_armor_slot_helmet");
-        EMPTY_ARMOR_SLOT_CHESTPLATE_TEXTURE = new Identifier("item/empty_armor_slot_chestplate");
-        EMPTY_ARMOR_SLOT_LEGGINGS_TEXTURE = new Identifier("item/empty_armor_slot_leggings");
-        EMPTY_ARMOR_SLOT_BOOTS_TEXTURE = new Identifier("item/empty_armor_slot_boots");
-        EMPTY_SLOT_HOE_TEXTURE = new Identifier("item/empty_slot_hoe");
-        EMPTY_SLOT_AXE_TEXTURE = new Identifier("item/empty_slot_axe");
-        EMPTY_SLOT_SWORD_TEXTURE = new Identifier("item/empty_slot_sword");
-        EMPTY_SLOT_SHOVEL_TEXTURE = new Identifier("item/empty_slot_shovel");
-        EMPTY_SLOT_PICKAXE_TEXTURE = new Identifier("item/empty_slot_pickaxe");
+        EMPTY_ARMOR_SLOT_HELMET_TEXTURE = Identifier.of("item/empty_armor_slot_helmet");
+        EMPTY_ARMOR_SLOT_CHESTPLATE_TEXTURE = Identifier.of("item/empty_armor_slot_chestplate");
+        EMPTY_ARMOR_SLOT_LEGGINGS_TEXTURE = Identifier.of("item/empty_armor_slot_leggings");
+        EMPTY_ARMOR_SLOT_BOOTS_TEXTURE = Identifier.of("item/empty_armor_slot_boots");
+        EMPTY_SLOT_HOE_TEXTURE = Identifier.of("item/empty_slot_hoe");
+        EMPTY_SLOT_AXE_TEXTURE = Identifier.of("item/empty_slot_axe");
+        EMPTY_SLOT_SWORD_TEXTURE = Identifier.of("item/empty_slot_sword");
+        EMPTY_SLOT_SHOVEL_TEXTURE = Identifier.of("item/empty_slot_shovel");
+        EMPTY_SLOT_PICKAXE_TEXTURE = Identifier.of("item/empty_slot_pickaxe");
         //bodrio tener que hacerlo, pero no tan bodrio fue hacerlo
     }
 

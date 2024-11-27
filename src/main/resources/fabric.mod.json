@@ -3,7 +3,7 @@
 	"id": "overthink",
 	"version": "${version}",
 	"name": "Overthink",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Overthink! para que los pibes la pidan.",
 	"authors": [
 		"Me!"
 	],
@@ -26,9 +26,9 @@
 		"overthink.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.16.2",
-		"minecraft": "~1.20.4",
-		"java": ">=17",
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
 		"fabric-api": "*"
 	},
 	"suggests": {

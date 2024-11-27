@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:light_gray_wool"
+    },
+    "B": {
+      "tag": "minecraft:planks"
+    },
+    "C": {
+      "item": "overthink:pillow"
+    }
+  },
+  "pattern": [
+    "CAA",
+    "BBB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:light_gray_bed"
+  }
+}

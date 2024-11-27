@@ -13,10 +13,13 @@ import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.predicate.StatePredicate;
+import net.minecraft.registry.RegistryWrapper;
+
+import java.util.concurrent.CompletableFuture;
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
-    public ModLootTableProvider(FabricDataOutput dataOutput) {
-        super(dataOutput);
+    protected ModLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+        super(dataOutput, registryLookup);
     }
 
     @Override
@@ -26,6 +29,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     }
 
+    /*
     public LootTable.Builder copperLikeOreDrops(Block drop) {
         return dropsWithSilkTouch(drop, (LootPoolEntry.Builder)this.applyExplosionDecay(drop,
                 ItemEntry.builder(Items.RAW_COPPER)
@@ -33,5 +37,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                                 .builder(UniformLootNumberProvider
                                         .create(2.0F, 5.0F)))
                         .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))));
+
     }
+     */
 }
