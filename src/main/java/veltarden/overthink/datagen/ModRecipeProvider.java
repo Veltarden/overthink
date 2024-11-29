@@ -424,7 +424,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, Identifier.of(getRecipeName(Items.STONE_HOE)));
 
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, Items.ARROW, 4)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, Items.ARROW, 8)
                 .pattern("  A")
                 .pattern(" B ")
                 .pattern("C  ")
@@ -433,7 +433,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('C', Items.FEATHER)
                 .criterion(hasItem(ModItems.STONE_SHARD), conditionsFromItem(ModItems.STONE_SHARD))
                 .criterion(hasItem(Items.FEATHER), conditionsFromItem(Items.FEATHER))
-                .offerTo(exporter, Identifier.of(getRecipeName(Items.ARROW)));
+                .offerTo(exporter, Identifier.of("double_arrows"));
 
         //Diamond removal
 
@@ -607,6 +607,32 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
                 .criterion(hasItem(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE), conditionsFromItem(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE))
                 .offerTo(exporter, Identifier.of("diamond_horse_armor_from_upgrade"));
+
+
+        //misc
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.BUNDLE, 1)
+                .pattern("BAB")
+                .pattern("A A")
+                .pattern("AAA")
+                .input('A', ModItems.DEAD_LEATHER)
+                .input('B', Items.STRING)
+                .criterion(hasItem(ModItems.DEAD_LEATHER), conditionsFromItem(ModItems.DEAD_LEATHER))
+                .criterion(hasItem(Items.STRING), conditionsFromItem(Items.STRING))
+                .offerTo(exporter, Identifier.of(Overthink.MOD_ID, "bundle_from_dead_leather"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.SADDLE, 1)
+                .pattern("AAA")
+                .pattern("B B")
+                .pattern("C C")
+                .input('A', ModItems.DEAD_LEATHER)
+                .input('B', Items.STRING)
+                .input('C', Items.IRON_INGOT)
+                .criterion(hasItem(ModItems.DEAD_LEATHER), conditionsFromItem(ModItems.DEAD_LEATHER))
+                .criterion(hasItem(Items.STRING), conditionsFromItem(Items.STRING))
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, Identifier.of(getRecipeName(Items.SADDLE)));
+
     }
 
 

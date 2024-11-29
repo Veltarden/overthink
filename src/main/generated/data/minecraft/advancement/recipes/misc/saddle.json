@@ -1,21 +1,31 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_feather": {
+    "has_dead_leather": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:feather"
+            "items": "overthink:dead_leather"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_stone_shard": {
+    "has_iron_ingot": {
       "conditions": {
         "items": [
           {
-            "items": "overthink:stone_shard"
+            "items": "minecraft:iron_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_string": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:string"
           }
         ]
       },
@@ -23,7 +33,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:arrow"
+        "recipe": "minecraft:saddle"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -31,13 +41,14 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_stone_shard",
-      "has_feather"
+      "has_dead_leather",
+      "has_string",
+      "has_iron_ingot"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:arrow"
+      "minecraft:saddle"
     ]
   }
 }

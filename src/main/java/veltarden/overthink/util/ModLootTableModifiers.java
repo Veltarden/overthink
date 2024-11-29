@@ -105,18 +105,9 @@ public class ModLootTableModifiers {
             if (LootTables.TRIAL_CHAMBERS_REWARD_OMINOUS_CHEST.equals(key)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.9f)) // Drops 90% of the time
+                        .conditionally(RandomChanceLootCondition.builder(0.4f)) // Drops 40% of the time
                         .with(ItemEntry.builder(ModItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE))
-                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(3.0f, 8.0f)).build());
-                tableBuilder.pool(poolBuilder.build());
-            }
-
-            if (LootTables.BASTION_TREASURE_CHEST.equals(key)) {
-                LootPool.Builder poolBuilder = LootPool.builder()
-                        .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.0f)) // Drops 90% of the time
-                        .with(ItemEntry.builder(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE))
-                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0.0f, 0.0f)).build());
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
                 tableBuilder.pool(poolBuilder.build());
             }
         });
