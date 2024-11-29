@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.SmithingTransformRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
@@ -633,6 +634,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
                 .offerTo(exporter, Identifier.of(getRecipeName(Items.SADDLE)));
 
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.BOOK, 1)
+                .input(Items.PAPER,3)
+                .input(ModItems.DEAD_LEATHER)
+                .offerTo(exporter, "book_from_dead_leather");
     }
 
 
