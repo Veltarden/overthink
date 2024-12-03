@@ -21,6 +21,7 @@ public class ModItemGroups {
                         entries.add(ModItems.STONE_SHARD);
                         entries.add(ModItems.DEAD_LEATHER);
                         entries.add(ModItems.NETHERITE_UPGRADE_SHARD);
+                        entries.add(ModItems.SACRED_MANGO);
                     }).build());
     public static void registerModItemGroups () {
         Overthink.LOGGER.info("metiendo grupos de items para: " + Overthink.MOD_ID);
