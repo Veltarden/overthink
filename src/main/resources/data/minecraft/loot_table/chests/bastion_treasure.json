@@ -368,14 +368,18 @@
       "rolls": 1.0
     },
     {
-      "bonus_rolls": 0.0,
+      "bonus_rolls": 1.0,
       "entries": [
         {
           "type": "minecraft:item",
           "name": "overthink:netherite_upgrade_shard"
         }
       ],
-      "rolls": 1.0
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 2.0,
+        "min": 1.0
+      }
     }
   ],
   "random_sequence": "minecraft:chests/bastion_treasure"
