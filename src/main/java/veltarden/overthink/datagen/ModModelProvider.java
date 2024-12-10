@@ -24,7 +24,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.STONE_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.DEAD_LEATHER, Models.GENERATED);
         itemModelGenerator.register(ModItems.NETHERITE_UPGRADE_SHARD, Models.GENERATED);
-        itemModelGenerator.register(ModItems.SACRED_MANGO, Models.GENERATED);
     }
 
 }

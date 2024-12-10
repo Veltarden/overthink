@@ -1,4 +1,4 @@
-// 1.21.1	2024-12-01T23:02:34.9089836	Overthink/Recipes
+// 1.21.1	2024-12-03T21:49:12.7531573	Overthink/Recipes
 edc47fed9d9fb0dc33f9ba0d5f90651ce043acef data\minecraft\advancement\recipes\combat\diamond_helmet.json
 006d5d2b32410a961bb611705426436a11406564 data\minecraft\advancement\recipes\misc\diamond_pickaxe_from_upgrade.json
 6b8d3a50fc72553268065c856c817706df1fd66d data\minecraft\advancement\recipes\misc\diamond_axe_from_upgrade.json
@@ -41,6 +41,7 @@ c464077d6aa055cd2925a3580ac7f989854fd117 data\minecraft\recipe\diamond_chestplat
 3fcf700dddc71d3b8ee719410d34cfc408feecd5 data\minecraft\advancement\recipes\misc\diamond_chestplate_from_upgrade.json
 dc2c4582fd01677a42c8e2c9f8581721ec357973 data\minecraft\advancement\recipes\combat\diamond_boots.json
 2fc78f966867bbe00a03e19c131de44dc03ec48e data\minecraft\recipe\diamond_shovel_from_upgrade.json
+442d894536676e28d4fde90590c403df4054945a data\overthink\recipe\netherite_upgrade_smithing_template_from_pieces.json
 4f2623c7bddc9aae02fba60829dd6c1f7751437b data\overthink\recipe\diamond_upgrade_smithing_template.json
 5a5f069daf5d863776c779dcc6421ff4909eb4d2 data\minecraft\recipe\yellow_bed.json
 e29dbb36d6bef4b5e1a72e74033a036494bcb7dd data\overthink\recipe\leather_cover.json
@@ -84,7 +85,6 @@ df1ef1a423d9feb88e863ec6fcb93f72758a6661 data\minecraft\recipe\light_blue_bed.js
 02899fe7a6c380733544d1100abf372758b66539 data\overthink\recipe\pillow.json
 981a5327f15eb220785a54c3677456d1d5a1b013 data\minecraft\recipe\stone_sword.json
 8b92dd3f05759b451dbe21b78ddc00a28075ebed data\minecraft\advancement\recipes\tools\stone_pickaxe.json
-e63b9e6cefafdf3ba8ac1c63dfeee1608c51d436 data\minecraft\advancement\recipes\misc\netherite_upgrade_smithing_template_from_pieces.json
 401e4c7294d281bc3e456bce31073005798bbebd data\minecraft\advancement\recipes\combat\diamond_chestplate.json
 0a0b2deb6dac809023516857f0042b9453cd2b1d data\minecraft\advancement\recipes\misc\green_bed.json
 d4544b515c99f863328ff9685094384071e9c809 data\minecraft\recipe\iron_axe.json
@@ -108,6 +108,7 @@ fe27234fc559752cbc7581590339cc800c7ba640 data\minecraft\advancement\recipes\misc
 193ff16299735d5b498b3def2ce9abb42a54a089 data\minecraft\advancement\recipes\tools\diamond_axe.json
 eaa0d28eae5434f08267d9e9fbce01446ea82092 data\minecraft\advancement\recipes\tools\diamond_hoe.json
 b2a3b3ddea8c19b3f4181ac37439eda580fd1429 data\minecraft\recipe\diamond_leggings.json
+3200340130da7a30c73d09073e8d3046482e85ce data\overthink\advancement\recipes\misc\netherite_upgrade_smithing_template_from_pieces.json
 a71f558edfb13dc700f17e1e8faacde847518cfd data\minecraft\recipe\red_bed.json
 136d19159e97944c2b61ef1e65b644e820015bc7 data\minecraft\recipe\diamond_pickaxe.json
 64d956de23dde13493a98e8123039f8ced4beb2c data\minecraft\recipe\pink_bed.json
@@ -115,7 +116,6 @@ a71f558edfb13dc700f17e1e8faacde847518cfd data\minecraft\recipe\red_bed.json
 a5d46c771ed2d571c53f49c99f2d649568259aad data\minecraft\advancement\recipes\misc\black_bed.json
 b220780f112ca6544c6f2e9f89eca1ee60efe403 data\minecraft\advancement\recipes\misc\dead_leather_from_smelting_rotten_flesh.json
 95dab907229e48a4142000db0e1a34277bed7e61 data\minecraft\recipe\white_bed.json
-442d894536676e28d4fde90590c403df4054945a data\minecraft\recipe\netherite_upgrade_smithing_template_from_pieces.json
 096a07351740c5ac95c12387a399abdef752f1d0 data\minecraft\recipe\magenta_bed.json
 2bb3f8a991333ebeeeb50dbee7b9c0a162445a7c data\minecraft\recipe\diamond_hoe_from_upgrade.json
 855bf44c6569416befa59d4fd26d80a784f4e9c9 data\minecraft\recipe\diamond_axe.json

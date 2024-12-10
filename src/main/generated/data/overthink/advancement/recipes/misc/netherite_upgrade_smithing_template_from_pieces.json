@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:netherite_upgrade_smithing_template_from_pieces"
+        "recipe": "overthink:netherite_upgrade_smithing_template_from_pieces"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:netherite_upgrade_smithing_template_from_pieces"
+      "overthink:netherite_upgrade_smithing_template_from_pieces"
     ]
   }
 }

@@ -23,7 +23,6 @@ public class ModItems {
     public static final Item STONE_SHARD = registerItem("stone_shard", new Item(new Item.Settings()));
     public static final Item DEAD_LEATHER = registerItem("dead_leather", new Item(new Item.Settings()));
     public static final Item NETHERITE_UPGRADE_SHARD = registerItem("netherite_upgrade_shard", new Item(new Item.Settings()));
-    public static final Item SACRED_MANGO = registerItem("sacred_mango", new Item(new Item.Settings()));
 
     //ESTO DE ACA GENERA TEMPLATES, NO COPIAR Y PEGAR
     public static final Item DIAMOND_UPGRADE_SMITHING_TEMPLATE = registerItem("diamond_upgrade_smithing_template", ModSmithingTemplateItem.createDiamondUpgrade());

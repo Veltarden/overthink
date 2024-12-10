@@ -51,7 +51,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('B', Items.NETHERITE_INGOT)
                 .criterion(hasItem(Items.NETHERITE_INGOT), conditionsFromItem(Items.NETHERITE_INGOT))
                 .criterion(hasItem(ModItems.NETHERITE_UPGRADE_SHARD), conditionsFromItem(ModItems.NETHERITE_UPGRADE_SHARD))
-                .offerTo(exporter, Identifier.of("netherite_upgrade_smithing_template_from_pieces"));
+                .offerTo(exporter, Identifier.of(Overthink.MOD_ID,"netherite_upgrade_smithing_template_from_pieces"));
 
         //alt:
         //.offerTo(exporter, Identifier.of("portal_caster_from_gem"));
